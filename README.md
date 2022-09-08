@@ -68,10 +68,10 @@ In .eslintrc.json
           "html": true
         }
       ],
+      "prettier/prettier": ["error", { "singleQuote": true }],
       "no-console": ["error", { "allow": ["warn", "error"] }]
     }
 }
-
 ```
 
 ## Prettier config file
@@ -85,4 +85,17 @@ In .prettierrc
   "jsxBracketSameLine": false,
   "bracketSpacing": true
 }
+```
+
+## In Vscode workspace settings
+
+In .vscode/settings.json
+
+```
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript"]
+ }
 ```
